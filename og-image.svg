@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b5fff"/>
+      <stop offset="100%" stop-color="#0847c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g transform="translate(120,180)">
+    <path d="M0 140 L26 60 Q34 34 62 34 H210 Q238 34 246 60 L272 140" stroke="#ffffff" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="-16" y="128" width="304" height="46" rx="18" fill="#ffffff"/>
+    <circle cx="46" cy="182" r="24" fill="#0847c4" stroke="#ffffff" stroke-width="12"/>
+    <circle cx="226" cy="182" r="24" fill="#0847c4" stroke="#ffffff" stroke-width="12"/>
+  </g>
+
+  <text x="460" y="300" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Meu<tspan fill="#c9dcff">GanhoReal</tspan></text>
+  <text x="460" y="360" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#dbe8ff">Quanto você realmente ganha rodando por aplicativo?</text>
+</svg>

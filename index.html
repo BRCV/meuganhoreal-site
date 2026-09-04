@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3FJC98B6B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K3FJC98B6B');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quanto Eu Realmente Ganho? | Calculadora para Motorista de App</title>
+<meta name="description" content="Descubra quanto você realmente ganha por hora e por km como motorista de Uber/99, descontando combustível, manutenção e depreciação do carro. Grátis.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.meuganhoreal.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="MeuGanhoReal">
+<meta property="og:title" content="Quanto Eu Realmente Ganho? | Calculadora para Motorista de App">
+<meta property="og:description" content="Descubra quanto você realmente ganha por hora e por km como motorista de Uber/99, descontando combustível, manutenção e depreciação do carro. Grátis.">
+<meta property="og:url" content="https://www.meuganhoreal.com.br/">
+<meta property="og:image" content="https://www.meuganhoreal.com.br/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quanto Eu Realmente Ganho? | Calculadora para Motorista de App">
+<meta name="twitter:description" content="Descubra quanto você realmente ganha por hora e por km como motorista de Uber/99, descontando combustível, manutenção e depreciação do carro. Grátis.">
+<meta name="twitter:image" content="https://www.meuganhoreal.com.br/og-image.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Meu<span>GanhoReal</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Calculadora</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="ebook.html" class="nav-cta">Ebook do IR</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="72" height="72">
+          <circle cx="60" cy="60" r="58" class="hero-icon-bg"/>
+          <path d="M28 74 L34 54 Q36 46 46 46 H74 Q84 46 86 54 L92 74" class="hero-icon-line"/>
+          <rect x="24" y="70" width="72" height="18" rx="8" class="hero-icon-fill"/>
+          <circle cx="40" cy="90" r="9" class="hero-icon-wheel"/>
+          <circle cx="80" cy="90" r="9" class="hero-icon-wheel"/>
+        </svg>
+      </div>
+      <h1>Você sabe quanto realmente ganha por hora dirigindo?</h1>
+      <p class="hero-sub">A maioria dos motoristas olha só o valor que cai na conta. Aqui você descobre o ganho <strong>líquido de verdade</strong>: depois de combustível, manutenção e desgaste do carro.</p>
+    </div>
+  </section>
+
+  <section class="calculator-section">
+    <div class="container calc-grid">
+
+      <form id="calc-form" class="calc-card">
+        <h2>Calculadora de Ganho Real</h2>
+
+        <fieldset>
+          <legend>Seu período de trabalho</legend>
+
+          <label for="ganhoBruto">Quanto você recebeu no período (R$)</label>
+          <input type="number" id="ganhoBruto" min="0" step="0.01" placeholder="Ex: 1200" required>
+
+          <label for="horas">Horas trabalhadas no período (rodando + esperando corrida)</label>
+          <input type="number" id="horas" min="0.1" step="0.1" placeholder="Ex: 40" required>
+
+          <label for="km">Km rodados no período</label>
+          <input type="number" id="km" min="0.1" step="0.1" placeholder="Ex: 800" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Combustível</legend>
+
+          <label for="precoCombustivel">Preço do combustível (R$/litro)</label>
+          <input type="number" id="precoCombustivel" min="0" step="0.01" placeholder="Ex: 5.90" required>
+
+          <label for="consumo">Consumo médio do carro (km por litro)</label>
+          <input type="number" id="consumo" min="0.1" step="0.1" placeholder="Ex: 12" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Custos fixos mensais (aproximado)</legend>
+
+          <label for="manutencao">Manutenção + troca de óleo/pneus (R$/mês)</label>
+          <input type="number" id="manutencao" min="0" step="0.01" placeholder="Ex: 300">
+
+          <label for="seguro">Seguro + IPVA + seguro obrigatório, ratear por mês (R$/mês)</label>
+          <input type="number" id="seguro" min="0" step="0.01" placeholder="Ex: 250">
+
+          <label for="kmMes">Km médios rodados por mês (para ratear os custos fixos acima)</label>
+          <input type="number" id="kmMes" min="1" step="0.1" placeholder="Ex: 3200" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Depreciação do carro</legend>
+          <label for="valorCarro">Valor atual do seu carro (R$)</label>
+          <input type="number" id="valorCarro" min="0" step="0.01" placeholder="Ex: 45000">
+          <p class="hint">Usamos uma estimativa de 15% de depreciação ao ano rodando como app, rateada pelos km do período.</p>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Calcular meu ganho real</button>
+      </form>
+
+      <div id="result" class="result-card" hidden>
+        <h2>Seu resultado</h2>
+
+        <div class="result-highlight">
+          <div class="result-box">
+            <span class="result-label">Ganho líquido por hora</span>
+            <span class="result-value" id="resHora">R$ 0,00</span>
+          </div>
+          <div class="result-box">
+            <span class="result-label">Ganho líquido por km</span>
+            <span class="result-value" id="resKm">R$ 0,00</span>
+          </div>
+        </div>
+
+        <table class="result-table">
+          <tbody>
+            <tr><td>Ganho bruto</td><td id="rBruto"></td></tr>
+            <tr><td>Gasto com combustível</td><td id="rComb"></td></tr>
+            <tr><td>Manutenção + seguro (rateado)</td><td id="rFixos"></td></tr>
+            <tr><td>Depreciação do carro (rateada)</td><td id="rDeprec"></td></tr>
+            <tr class="total-row"><td>Ganho líquido total</td><td id="rLiquido"></td></tr>
+          </tbody>
+        </table>
+
+        <p class="result-note" id="resultNote"></p>
+
+        <div class="email-capture">
+          <h3>Quer receber esse resultado no seu e-mail e dicas pra ganhar mais rodando?</h3>
+          <form id="lead-form" class="lead-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+            <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+            <button type="submit" class="btn-primary">Quero receber</button>
+          </form>
+          <p class="lead-note" id="leadNote" hidden>Prontinho! Fique de olho na sua caixa de entrada.</p>
+        </div>
+
+        <div class="cta-box">
+          <p>Chegou a hora de declarar Imposto de Renda e você não sabe por onde começar como autônomo?</p>
+          <a href="ebook.html" class="btn-secondary">Ver o guia de IR para motorista de app</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="explain-section">
+    <div class="container">
+      <h2>Como calculamos o seu ganho real?</h2>
+      <p>A maioria dos motoristas de aplicativo calcula o ganho errado: olha só o valor bruto que a plataforma repassa e ignora os custos que corroem esse valor aos poucos — combustível, desgaste de peças e a depreciação do próprio carro, que é o maior custo invisível da atividade.</p>
+      <p>Nesta calculadora, descontamos do seu ganho bruto: o gasto real com combustível (baseado no seu consumo e no preço pago), a parcela de manutenção e seguro referente aos km rodados no período, e uma estimativa de depreciação do veículo (15% ao ano, valor médio de mercado para carros usados como app).</p>
+      <p>O resultado é o quanto realmente sobra no seu bolso por hora trabalhada e por km rodado — o número que importa para decidir se vale a pena aceitar uma corrida, trocar de carro ou até seguir na profissão.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 MeuGanhoReal. Ferramentas e conteúdo para motoristas de aplicativo.</p>
+    <nav class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos de Uso</a>
+      <a href="mailto:contato@meuganhoreal.com.br">Contato</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/calculadora.js"></script>
+</body>
+</html>
