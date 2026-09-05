@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3FJC98B6B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K3FJC98B6B');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora do Carnê-Leão para Motorista de App | MeuGanhoReal</title>
+<meta name="description" content="Descubra se você deve Imposto de Renda este mês como motorista de Uber/99, usando a parcela isenta de 40% para transporte de passageiros e a tabela de 2026. Grátis.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.meuganhoreal.com.br/carne-leao.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="MeuGanhoReal">
+<meta property="og:title" content="Calculadora do Carnê-Leão para Motorista de App | MeuGanhoReal">
+<meta property="og:description" content="Descubra se você deve Imposto de Renda este mês como motorista de Uber/99, usando a parcela isenta de 40% para transporte de passageiros e a tabela de 2026. Grátis.">
+<meta property="og:url" content="https://www.meuganhoreal.com.br/carne-leao.html">
+<meta property="og:image" content="https://www.meuganhoreal.com.br/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora do Carnê-Leão para Motorista de App | MeuGanhoReal">
+<meta name="twitter:description" content="Descubra se você deve Imposto de Renda este mês como motorista de Uber/99, usando a parcela isenta de 40% e a tabela de 2026.">
+<meta name="twitter:image" content="https://www.meuganhoreal.com.br/og-image.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Meu<span>GanhoReal</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Calculadora</a>
+      <a href="carne-leao.html">Carnê-Leão</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="ebook.html" class="nav-cta">Ebook do IR</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="72" height="72">
+          <circle cx="60" cy="60" r="58" class="hero-icon-bg"/>
+          <text x="60" y="78" text-anchor="middle" font-size="52" font-weight="800" class="hero-icon-fill" font-family="Arial, sans-serif">%</text>
+        </svg>
+      </div>
+      <h1>Você deve Imposto de Renda este mês?</h1>
+      <p class="hero-sub">Motorista de app tem uma parcela automaticamente isenta sobre o que ganha — e, com a isenção de 2026, a maioria pode não dever nada por mês. Descubra o seu caso em segundos.</p>
+    </div>
+  </section>
+
+  <section class="calculator-section">
+    <div class="container calc-grid">
+
+      <form id="cl-form" class="calc-card">
+        <h2>Calculadora do Carnê-Leão</h2>
+
+        <fieldset>
+          <legend>Seu ganho no mês</legend>
+          <label for="ganhoMes">Quanto você recebeu neste mês, somando todas as plataformas (R$)</label>
+          <input type="number" id="ganhoMes" min="0" step="0.01" placeholder="Ex: 6000" required>
+          <p class="hint">Some Uber, 99, InDrive e qualquer outra plataforma do mesmo mês.</p>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Calcular meu imposto do mês</button>
+      </form>
+
+      <div id="cl-result" class="result-card" hidden>
+        <h2>Seu resultado</h2>
+
+        <div class="result-highlight">
+          <div class="result-box">
+            <span class="result-label">Parcela isenta (40%)</span>
+            <span class="result-value" id="clIsenta">R$ 0,00</span>
+          </div>
+          <div class="result-box">
+            <span class="result-label">Base tributável (60%)</span>
+            <span class="result-value" id="clBase">R$ 0,00</span>
+          </div>
+        </div>
+
+        <div id="clSemImposto" class="cl-status cl-status-ok" hidden>
+          <strong>Boa notícia: você provavelmente não deve imposto este mês.</strong>
+          <p>Sua base tributável ficou dentro da faixa de isenção mensal de R$ 5.000,00 (vigente desde 2026). Ainda assim, isso não dispensa a Declaração de Ajuste Anual — veja o <a href="ebook.html">guia completo</a> pra entender quando ela é obrigatória.</p>
+        </div>
+
+        <div id="clComImposto" class="cl-status cl-status-warn" hidden>
+          <strong>Estimativa de imposto devido: <span id="clImposto">R$ 0,00</span></strong>
+          <p class="result-note">Este é um teto estimado, calculado sem o redutor da Lei nº 15.270/2025 (que reduz ainda mais o imposto para quem está entre R$ 5.000,01 e R$ 7.350,00 de base tributável). Na prática, o valor real tende a ser <strong>igual ou menor</strong> que esse. Para o valor exato do DARF, lance seu rendimento no <a href="https://www.gov.br/receitafederal" target="_blank" rel="noopener">Carnê-Leão Web</a>, selecionando a ocupação "Motorista e Condutor do Transporte de Passageiros".</p>
+        </div>
+
+        <div class="cta-box">
+          <p>Quer entender quando isso te obriga a declarar no fim do ano, e como evitar a malha fina?</p>
+          <a href="ebook.html" class="btn-secondary">Ver o guia de IR para motorista de app</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="explain-section">
+    <div class="container">
+      <h2>Como calculamos essa estimativa?</h2>
+      <p>Quem exerce a atividade de transporte de passageiros como autônomo tem direito a uma parcela automaticamente isenta de 40% sobre o valor bruto recebido (Lei nº 7.713/1988, art. 9º) — uma espécie de indenização presumida pelo desgaste, combustível e manutenção do carro, que não depende de nota fiscal. Os outros 60% formam a base de cálculo tributável.</p>
+      <p>Desde janeiro de 2026 (Lei nº 15.270/2025), toda base de cálculo mensal até R$ 5.000,00 é isenta de Imposto de Renda. Juntando as duas regras, um motorista só passa a dever algo quando o ganho bruto do mês ultrapassa aproximadamente R$ 8.334,00 — abaixo disso, a base tributável (60% do bruto) fica dentro da faixa isenta.</p>
+      <p>Quando a base tributável ultrapassa R$ 5.000,00, o cálculo exato usa uma fórmula de redutor que diminui progressivamente até R$ 7.350,00 de base — por isso, acima desse limite, mostramos aqui apenas uma estimativa de teto (o valor máximo possível), não o valor exato. O cálculo definitivo deve sempre ser conferido no Carnê-Leão Web da Receita Federal antes de gerar o DARF.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 MeuGanhoReal. Ferramentas e conteúdo para motoristas de aplicativo.</p>
+    <nav class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos de Uso</a>
+      <a href="mailto:contato@meuganhoreal.com.br">Contato</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/carne-leao.js"></script>
+</body>
+</html>

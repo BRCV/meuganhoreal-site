@@ -65,6 +65,23 @@ a:hover { text-decoration: underline; }
 }
 .nav-cta:hover { background: var(--color-primary-dark); }
 
+@media (max-width: 640px) {
+  .header-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    row-gap: 8px;
+  }
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+  .main-nav a { font-size: 0.85rem; }
+  .logo { font-size: 1.1rem; }
+}
+
 /* Hero */
 .hero {
   padding: 56px 0 32px;
@@ -645,3 +662,26 @@ input[type="number"]:focus {
   text-align: center;
 }
 .article-cta p { margin: 0 0 4px; font-weight: 600; }
+
+/* Carnê-leão calculator status boxes */
+.cl-status {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+.cl-status strong { display: block; margin-bottom: 6px; font-size: 1.05rem; }
+.cl-status p { margin: 6px 0 0; }
+.cl-status-ok {
+  background: #e9f9f1;
+  border: 1px solid var(--color-accent);
+  color: #0a6b45;
+}
+.cl-status-ok a { color: #0a6b45; text-decoration: underline; }
+.cl-status-warn {
+  background: #fff7e6;
+  border: 1px solid #e0a72b;
+  color: #7a5200;
+}
+.cl-status-warn a { color: #7a5200; text-decoration: underline; }
+.cl-status-warn .result-note { color: inherit; font-style: normal; font-size: 0.85rem; }
