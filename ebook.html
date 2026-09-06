@@ -95,7 +95,7 @@
         <p class="price-tag-label">Acesso completo e vitalício</p>
         <p class="price-tag">R$ 27<span>,00</span></p>
         <p class="price-sub">Pagamento único · PDF, planilha e checklist liberados na hora</p>
-        <a href="https://pay.kiwify.com.br/achTLKJ" class="btn-primary btn-large">Comprar agora com acesso imediato</a>
+        <a href="https://pay.kiwify.com.br/achTLKJ" id="checkout-btn" class="btn-primary btn-large">Comprar agora com acesso imediato</a>
         <p class="guarantee-note">🔒 Garantia incondicional de 7 dias — não gostou, devolvemos seu dinheiro.</p>
       </div>
     </div>
@@ -203,5 +203,13 @@
   </div>
 </footer>
 
+<script>
+  var checkoutBtn = document.getElementById('checkout-btn');
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function () {
+      if (typeof window.fbq === 'function') window.fbq('track', 'InitiateCheckout');
+    });
+  }
+</script>
 </body>
 </html>
