@@ -51,6 +51,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.meuganhoreal.com.br/blog/darf-carne-leao-passo-a-passo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.meuganhoreal.com.br/blog/malha-fina-motorista-app.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.meuganhoreal.com.br/sobre.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
